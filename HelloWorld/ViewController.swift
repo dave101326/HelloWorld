@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lbl: UILabel!
     
-    @IBAction func btn(_ sender: UIButton) {
-        lbl.text = "Hello World !"
+    @IBAction func swt(_ sender: UISwitch) {
+        if sender.isOn {
+            lbl.text = "hello world !"
+        }
+        else {
+            lbl.text = ""
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         lbl.text = ""
