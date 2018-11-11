@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbl: UILabel!
     
     @IBAction func btn(_ sender: UIButton) {
+        lbl.text = "Hello World !"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        lbl.text = ""
     }
 
 
